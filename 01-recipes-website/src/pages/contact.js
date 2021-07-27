@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
+import FeaturedRecipes from '../components/FeaturedRecipes'
 
 const ContactPage = () => {
   return (
@@ -40,6 +41,7 @@ const ContactPage = () => {
             </form>
           </article>
         </section>
+        <FeaturedRecipes />
       </main>
     </Layout>
   )
