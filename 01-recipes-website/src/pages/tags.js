@@ -4,6 +4,7 @@ import slugify from 'slugify'
 
 import Layout from '../components/Layout'
 import setupTags from '../utils/setupTags'
+import Seo from '../components/SEO'
 
 export const query = graphql`
   {
@@ -21,6 +22,7 @@ const TagsPage = ({ data }) => {
   const newTags = setupTags(data.allContentfulRecipe.nodes)
   return (
     <Layout>
+      <Seo title='Tags' />
       <main className='page'>
         <section className='tags-page'>
           {newTags.map((tag, index) => {

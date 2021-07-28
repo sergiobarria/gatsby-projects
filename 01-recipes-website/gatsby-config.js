@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
+    `gatsby-plugin-react-helment`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,6 +33,23 @@ module.exports = {
         spaceId: `s1hw5w8gtnxz`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Montserrat',
+              variants: ['400'],
+            },
+            {
+              family: 'Inconsolata',
+              variants: ['400', '500', '600', '700'],
+            },
+          ],
+        },
       },
     },
   ],

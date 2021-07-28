@@ -4,10 +4,12 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
 import FeaturedRecipes from '../components/FeaturedRecipes'
+import Seo from '../components/SEO'
 
 const AboutPage = () => {
   return (
     <Layout>
+      <Seo title='About Page' />
       <main className='page'>
         <section className='about-page'>
           <article>

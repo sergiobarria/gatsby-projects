@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import RecipesList from '../components/RecipesList'
 import Layout from '../components/Layout'
+import Seo from '../components/SEO'
 
 export const query = graphql`
   query getRecipeByTag($tag: String) {
@@ -28,6 +29,7 @@ const TagTemplatePage = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <Seo title={recipes.title} />
       <main className='page'>
         <h2>{pageContext.tag}</h2>
         <div className='tag-recipes'>

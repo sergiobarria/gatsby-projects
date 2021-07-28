@@ -5,6 +5,7 @@ import { BsClockHistory, BsClock, BsPeople } from 'react-icons/bs'
 import slugify from 'slugify'
 
 import Layout from '../components/Layout'
+import Seo from '../components/SEO'
 
 export const query = graphql`
   query getSingleRecipe($title: String) {
@@ -44,6 +45,7 @@ const RecipeTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <Seo title={title} description={description} />
       <main className='page'>
         <div className='recipe-page'>
           {/* hero */}

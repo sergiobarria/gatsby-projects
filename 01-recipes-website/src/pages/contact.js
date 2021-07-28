@@ -2,10 +2,12 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 import FeaturedRecipes from '../components/FeaturedRecipes'
+import Seo from '../components/SEO'
 
 const ContactPage = () => {
   return (
     <Layout>
+      <Seo title='Contact' />
       <main className='page'>
         <section className='contact-page'>
           <article className='contact-info'>
