@@ -6,7 +6,13 @@
 
 module.exports = {
   /* Your site config here */
-
+  siteMetadata: {
+    title: `WebDev Portfolio`,
+    description: `Awesome WebDev Portfolio built with Gatsby and Strapi`,
+    titleTemplate: `%s | WebDev Portfolio`,
+    url: `https://gatsby-strapi-portfolio-template-sb.netlify.app`,
+    twitterUsername: `@sergioBarria01`,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

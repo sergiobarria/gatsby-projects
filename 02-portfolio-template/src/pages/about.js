@@ -28,6 +28,7 @@ const About = ({ data }) => {
 
   return (
     <>
+      <Seo title='about' />
       <section className='about-page'>
         <div className='section-center about-center'>
           <img

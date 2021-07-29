@@ -35,6 +35,7 @@ const ProjectsPage = ({ data }) => {
   const projects = data.allStrapiProject.nodes
   return (
     <>
+      <Seo title='projects' />
       <main>
         <section className='project-page'>
           <Projects title='all projects' projects={projects} />
