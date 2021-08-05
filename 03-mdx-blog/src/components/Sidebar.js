@@ -11,7 +11,9 @@ const Sidebar = ({ isOpen, toggle }) => {
       </button>
 
       <div className='sidebar-container'>
-        <Links styleClass='sidebar-links' />
+        <Links styleClass='sidebar-links'>
+          <Categories />
+        </Links>
       </div>
     </aside>
   )
